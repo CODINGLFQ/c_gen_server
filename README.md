@@ -1,1 +1,2 @@
+使用标准gen_server实现。用rebar构建工具。使用simple_one_for_one多次创建子进程。设置定时器正常匹配后进程挂掉然后重启进程。
 # c_gen_server
