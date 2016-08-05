@@ -1,0 +1,12 @@
+{application, cserver,
+ [
+  {description, "calculate rebar build"},
+  {vsn, "1"},
+  {registered, [cserver_sup]},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {mod, { cserver_app, []}},
+  {env, []}
+ ]}.
