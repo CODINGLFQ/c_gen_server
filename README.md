@@ -13,12 +13,13 @@ cserver使用gen_server实现。用rebar构建工具。使用simple_one_for_one�
 3> supervisor:start_child(cserver_sup, []). //多次启动子进程后不会报错
 4>cserver_server:calculate(pid(0,42,0), {1, '+', 2}).
 
-stop停止重启：
+stop停止重启：             
 14> cserver_server:stop(pid(0,49,0)).
 cast stop{state,undefined}
 cserver_server stopping !
 ok
-this is P's pid: abc312
+this is P's pid: abc312        
+        
 15> cserver_server starting!
 this is a testx
 
