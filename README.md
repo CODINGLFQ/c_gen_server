@@ -1,6 +1,10 @@
 cserver使用gen_server实现。用rebar构建工具。使用simple_one_for_one多次创建子进程。设置定时器正常匹配后进程挂掉然后重启进程。
 麻雀虽小五脏俱全。
 
+>calculate ./rebar compile 
+>cd ebin/ 
+>erl 
+
 1> application:load(cserver).
 2> application:load(cserver).
 3> supervisor:start_child(cserver_sup, []).
