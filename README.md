@@ -10,7 +10,7 @@ cserver使用gen_server实现。用rebar构建工具。使用simple_one_for_one�
 3> supervisor:start_child(cserver_sup, []).       
 4> cserver_server:calculate({1,'+',1}).      
 
-3> supervisor:start_child(cserver_sup, []). //多次启动子进程后不会报错
+3> supervisor:start_child(cserver_sup, []). //多次启动子进程后不会报错                
 4>cserver_server:calculate(pid(0,42,0), {1, '+', 2}).
 
 stop停止重启：             
