@@ -7,10 +7,10 @@
 
 1> application:load(cserver).         
 2> application:start(cserver).        
-3> supervisor:start_child(cserver_sup, []).       
+3> supervisor:start_child(cserver_sup, [ ]).       
 4> cserver_server:calculate({1,'+',2}).      
 
-3> supervisor:start_child(cserver_sup, []). //多次启动子进程后不会报错                
+3> supervisor:start_child(cserver_sup, [ ]). //多次启动子进程后不会报错                
 4>cserver_server:calculate(pid(0,42,0), {1, '+', 2}).
 
 stop and restart：             
